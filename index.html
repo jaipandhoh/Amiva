@@ -614,8 +614,7 @@
 
     <!-- ONE-LINER: volunteer engine -->
     <section class="oneliner rise">
-      <p>Amiva runs on students — <span class="em">high school, college, and pre-health</span> — bringing conversation
-        and culture, never clinical care.</p>
+      <p>Through a network of driven volunteers, Amiva brings conversation and culture to seniors.</p>
     </section>
 
   </main>
@@ -652,7 +651,7 @@
     })();
 
     // To collect responses: deploy your Google Apps Script and paste its web-app URL below.
-    var ENDPOINT = "";
+    var ENDPOINT = "https://script.google.com/macros/s/AKfycbyL-TjpG2bGrt0cJKXs2isfHiZdADcLwBlYtHieFRFh_wHVSzrMvUt_XwWJ17ef3fOH/exec";
     var form = document.getElementById('involveForm');
     var okMsg = document.getElementById('okMsg'), errMsg = document.getElementById('errMsg');
     form.addEventListener('submit', async function (e) {
@@ -664,7 +663,7 @@
       btn.disabled = true; btn.textContent = 'Sending…';
       try {
         if (ENDPOINT) {
-          var res = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+          var res = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(data) });
           var out = await res.json(); if (!out.success) throw new Error(out.message || 'failed');
         } else { console.log('Amiva get-involved (no endpoint set yet):', data); }
         form.reset(); okMsg.style.display = 'block'; okMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });

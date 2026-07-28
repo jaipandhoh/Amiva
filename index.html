@@ -709,6 +709,58 @@
       dialog[open] .dlg-card { animation: none; }
       .dlg-item, .dlg-item .arw { transition: none; }
     }
+
+    /* COLLEGE APPLY SECTION */
+    .college-apply-cta {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .college-apply-cta h2 {
+      font-size: clamp(1.9rem, 4.2vw, 2.7rem);
+      max-width: 22ch;
+      margin-inline: auto;
+    }
+    .college-apply-cta .sub {
+      color: var(--ink-soft);
+      max-width: 58ch;
+      margin: 1.1rem auto 2.2rem;
+    }
+
+    /* COLLEGE & CLUBS SPECIAL DO CARDS */
+    #for-college .do .tag,
+    #for-clubs .do .tag {
+      font-family: var(--display); /* Elegant serif. Switch to var(--body) for geometric sans-serif */
+      font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      display: block;
+      margin-top: 0.4rem;
+      margin-bottom: 0.35rem;
+    }
+
+    #for-college .do h3,
+    #for-clubs .do h3 {
+      font-family: var(--body);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink-soft);
+      margin-top: 0.25rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+      letter-spacing: normal;
+    }
+
+    #for-college .do .major-becomes,
+    #for-clubs .do .major-becomes {
+      display: block;
+      font-style: italic;
+      font-size: 0.92rem;
+      color: var(--gold-deep);
+      margin-top: 0.7rem;
+    }
   </style>
 </head>
 
@@ -863,6 +915,157 @@
             NHS, Key Club, or Interact advisor? Email
             <a href="mailto:amivaseniors@gmail.com">amivaseniors@gmail.com</a> — we're happy to visit a meeting.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR COLLEGE STUDENTS — major → real life -->
+    <section id="for-college">
+      <div class="wrap-wide">
+        <p class="eyebrow" style="text-align:center">For college students</p>
+        <h2 style="text-align:center;max-width:20ch;margin-inline:auto">Your major, meet someone's living room</h2>
+        <p class="sub" style="max-width:60ch;margin:.9rem auto 0;text-align:center;color:var(--ink-soft)">
+          A lot of what Amiva does already looks a lot like your coursework — you just get to do it
+          with a real person on the other end of the couch. Here's what a few majors turn into.
+        </p>
+ 
+        <div class="do-grid" style="margin-top:2.8rem">
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Journalism &amp; Communication</span>
+            <h3>Write the story of a lifetime</h3>
+            <p>Sit with a senior over a few visits and help turn their memories into a keepsake their
+              family keeps for good — Amiva's signature life-story project.</p>
+            <span class="major-becomes">→ a real byline, a real subject, a real deadline</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">World Languages &amp; Linguistics</span>
+            <h3>Finally, a conversation partner</h3>
+            <p>Practice with someone who dreams in the language you're studying. We match by heritage
+              and tongue, so the accent, the slang, and the stories are all the real thing.</p>
+            <span class="major-becomes">→ speaking hours that actually feel like home</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Public Health</span>
+            <h3>See isolation up close</h3>
+            <p>Loneliness is a public-health problem, and you'll meet it where it lives. Great grounding
+              for anyone headed into community health, outreach, or policy.</p>
+            <span class="major-becomes">→ fieldwork you can point to in an interview</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Gerontology &amp; Aging Studies</span>
+            <h3>Textbook, meet real people</h3>
+            <p>Everything you're reading about aging, memory, and dignity — from the person's own
+              chair. We train you first, so you show up prepared, not guessing.</p>
+            <span class="major-becomes">→ the hours your program keeps asking for</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">History &amp; Anthropology</span>
+            <h3>Oral history, first-hand</h3>
+            <p>Immigration, work, war, home — recorded from someone who lived it, in their words and at
+              their pace. Primary sources don't get more primary than this.</p>
+            <span class="major-becomes">→ a recorded history no archive has yet</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Music, Art &amp; Film</span>
+            <h3>Capture a whole life</h3>
+            <p>Build the playlist of someone's youth, sketch a portrait, or film a short with their
+              blessing. Small creative projects that mean everything to a family.</p>
+            <span class="major-becomes">→ a portfolio piece with a heartbeat</span>
+          </div>
+ 
+        </div>
+ 
+        <!-- catch-all for every other major -->
+        <div class="catch-all rise">
+          <div>
+            <h3>Don't see your major?</h3>
+            <p>Psych, social work, education, nursing, business, art — they all fit. Amiva is
+              companionship, not care, so no clinical experience is ever needed. Bring the skills
+              you have; we'll help you use them.</p>
+          </div>
+          <a href="#college-apply" class="btn btn-primary">Bring your major in</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- FOR CLUBS, CHAPTERS & ORGS — the group angle -->
+    <section id="for-clubs" class="band">
+      <div class="wrap-wide">
+        <p class="eyebrow" style="text-align:center">Clubs, chapters &amp; orgs</p>
+        <h2 style="text-align:center;max-width:20ch;margin-inline:auto">Bring the whole group</h2>
+        <p class="sub" style="max-width:58ch;margin:.9rem auto 0;text-align:center;color:var(--ink-soft)">
+          Some of the best visits aren't solo. Whole clubs, teams, and Greek chapters can take on a
+          senior — or a whole care home — as a semester-long thing.
+        </p>
+ 
+        <div class="do-grid" style="margin-top:2.8rem">
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Fraternities &amp; Sororities</span>
+            <h3>Philanthropy with a face</h3>
+            <p>Make Amiva your chapter's cause for the semester — group visits, a shared care-home
+              partnership, and service hours the whole roster can count.</p>
+            <span class="major-becomes">→ a philanthropy that isn't just a check</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Knitting &amp; Crochet Clubs</span>
+            <h3>Sew a memory into something soft</h3>
+            <p>Take a senior's old clothes — a coat, a dress, a favorite shirt — and stitch them into a
+              keepsake blanket or pillow the family can hold onto.</p>
+            <span class="major-becomes">→ a heirloom made from a life already lived</span>
+          </div>
+ 
+          <div class="do rise">
+            <svg class="petal" width="28" height="28" aria-hidden="true"><use href="#petal-mark" /></svg>
+            <span class="tag">Any club, team or org</span>
+            <h3>Whatever your thing is, share it</h3>
+            <p>Chess, choir, cooking, gardening, gaming — a shared activity is the easiest way into a
+              first visit. Tell us what your group loves and we'll find the fit.</p>
+            <span class="major-becomes">→ a standing event your members look forward to</span>
+          </div>
+ 
+        </div>
+ 
+        <!-- final CTA -->
+        <div class="college-cta">
+          <a href="#college-apply" class="btn btn-primary">Get your group started</a>
+          <a href="mailto:amivaseniors@gmail.com" class="btn btn-ghost" style="margin-left:.6rem">Email us</a>
+          <p class="note">
+            Professor, advisor, or chapter president? Email
+            <a href="mailto:amivaseniors@gmail.com">amivaseniors@gmail.com</a> — we're happy to visit a
+            class or meeting and set up service-learning hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLEGE APPLICATION CTA -->
+    <section id="college-apply">
+      <div class="wrap-wide college-apply-cta rise">
+        <p class="eyebrow">Ready to start?</p>
+        <h2>Whatever you're studying, there's a senior who'd love the company</h2>
+        <p class="sub">
+          Amiva is companionship, not care — so no clinical experience is ever needed. 
+          Bring the skills you have; we'll train you first so you show up prepared, not guessing.
+        </p>
+        <div class="actions">
+          <a href="#volunteer-apply" class="btn btn-primary">Apply to volunteer</a>
+          <a href="mailto:amivaseniors@gmail.com" class="btn btn-ghost">Email us</a>
         </div>
       </div>
     </section>
